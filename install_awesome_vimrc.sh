@@ -10,6 +10,8 @@ source ~/.vim_runtime/vimrcs/extended.vim
 try
 source ~/.vim_runtime/my_configs.vim
 catch
-endtry' > ~/.vimrc
+endtry' 
+cp ~/.vimrc ~/.vimrc_backup
+mv .vimrc ~/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
